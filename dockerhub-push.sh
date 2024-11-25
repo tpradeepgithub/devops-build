@@ -3,11 +3,11 @@
 # Exit script on any error
 set -e 
 # Docker credentials (replace with environment variables or Jenkins credentials)
-DOCKER_USERNAME=$0
-DOCKER_PASSWORD=$1
+DOCKER_USERNAME=$1
+DOCKER_PASSWORD=$2
 IMAGE_NAME="web-app"
 IMAGE_TAG="latest"
-DOCKER_REPO="pradeeporkodi/dev"
+DOCKER_REPO="pradeeporkodi/$3"
 
 echo "Logging in to Docker Hub..."
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
