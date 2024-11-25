@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Exit script on any error
-set -e
+set -e 
 # Docker credentials (replace with environment variables or Jenkins credentials)
 DOCKER_USERNAME=$0
 DOCKER_PASSWORD=$1
