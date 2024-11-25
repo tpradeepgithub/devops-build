@@ -4,8 +4,8 @@
 set -e
 
 # Docker credentials (replace with environment variables or Jenkins credentials)
-DOCKER_USERNAME=pradeep12798k@gmail.com
-DOCKER_PASSWORD=Porkodi@1207
+DOCKER_USERNAME=$0
+DOCKER_PASSWORD=$1
 IMAGE_NAME="web-app"
 IMAGE_TAG="latest"
 DOCKER_REPO="pradeeporkodi/dev"
